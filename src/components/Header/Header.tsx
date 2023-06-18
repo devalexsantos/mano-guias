@@ -1,6 +1,7 @@
 "use client";
 
 import { fetchHygraphQuerySlug } from "@/utils/fetch-hygraph-slug";
+import { fetchHygraphQueryTags } from "@/utils/fetch-hygraph-tags";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
@@ -53,7 +54,7 @@ export default function Header(){
                 'text-white p-1 rounded bg-red-500'
                 :
                 'text-gray-200 p-1'}>
-                    <Link href={item.slug}>
+                    <Link href={`/${item.slug}`}>
                         {item.title}
                     </Link>
                 </li>
