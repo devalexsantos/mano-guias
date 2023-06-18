@@ -11,6 +11,7 @@ export const fetchHygraphQueryFilterByTags = async(slug: string) => {
             cards(where: {tags_every: {title_in: "${slug}"}}, orderBy: createdAt_DESC) {
                 id
                 url
+                title
                 image {
                   url
                 }
