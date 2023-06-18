@@ -17,7 +17,7 @@ export type Cards = {
 
 export default function Cards({cards}: Cards) {
     return(
-        <div className="flex items-center justify-center max-w-5xl m-auto mt-10 flex-wrap">
+        <div className="flex justify-center max-w-5xl m-auto mt-10 flex-wrap">
             {cards.map((item)=>(
                 <Link href={item.url} key={item.id} className="m-3" target="_blank" rel="">
                     <div className="flex flex-col gap-2 max-w-[360px]">
