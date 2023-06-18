@@ -11,11 +11,11 @@ export default async function Guia({params}: Params) {
 
     const response = await fetchHygraphQueryFilter(params.slug)
 
-
-
     return(
         <div>
             <Cards cards={response}/>
         </div>
     )
 }
+
+export const revalidate = 10
