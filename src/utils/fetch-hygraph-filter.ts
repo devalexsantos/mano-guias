@@ -8,7 +8,7 @@ export const fetchHygraphQueryFilter = async(slug: string) => {
     const { cards }: Cards = await hygraph.request(
         `
         {
-            cards(where: { category: { slug: "${slug}" } }, orderBy: createdAt_DESC) {
+            cards(where: { category: { slug: "${slug}" } }, orderBy: updatedAt_DESC) {
               id
               title
               url

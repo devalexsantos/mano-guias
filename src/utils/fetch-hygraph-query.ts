@@ -7,7 +7,7 @@ export const fetchHygraphQuery = async() => {
     const { cards }: Cards = await hygraph.request(
         `
         {
-            cards(orderBy: createdAt_DESC) {
+            cards(orderBy: updatedAt_DESC) {
               id
               title
               url
