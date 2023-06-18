@@ -15,7 +15,7 @@ export default function Tags({tags}: Tag){
 
     return(
         <div className="w-full m-auto flex justify-center mt-4">
-            <ul className="flex gap-2">
+            <ul className="flex justify-center flex-wrap gap-2 p-2">
                 {tags.map((item, index)=> (
                     <Link key={index} href={`${pathname}/${item.title}`}>
                         <li className={`text-sm p-1 border rounded`}>{item.title}</li>

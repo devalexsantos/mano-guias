@@ -23,3 +23,4 @@ export default async function Guia({params}: Params) {
         </div>
     )
 }
+export const revalidate = 10
